@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Montserrat&family=Mukta&family=Nunito&family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&family=Poppins&display=swap');
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+font-family: 'Josefin Sans', sans-serif;}
+.page-title {
+  padding: 100px;
+  text-align: center;
+  font-size: 2rem;
+  color: #111;
+  font-weight: 500;
+  margin-bottom: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+      url(../images/bg/bg2.jpg);
+    background-size: cover;
+    color: #fff;
+}
+.page-content {
+  padding: 0 40px;
+    margin-bottom: 50px;
+}
+.card {
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+  margin-bottom: 20px;
+  margin: 10px;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.job-req{
+  text-align: center;
+}
+.job-req p {
+  text-align: justify;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #111;
+  color: #fff;
+  padding: 5px 10px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.job-title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.job-req {
+  text-align: justify;
+  justify-content: center;
+}
+.job-actions {
+  margin: 20px 0;
+}
+#viewbtn {
+ 
+  display: block;
+  background-color: #021B79;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 28px;
+  max-width: 150px;
+  color: #fff;
+}
+#viewbtn:hover{
+  border: 1px solid #021B79;
+  color: #021B79;
+  background-color: #fff;
+}
+#applybtn{
+border: 1px solid #ff6969;
+  color: #ff6969;
+  background-color: #fff;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 28px;
+    max-width: 150px;
+}
+#applybtn:hover{
+  background-color: #ff6969;
+  color: #fff;
+}
+.job-cards {
+  display: grid;
+  gap: 1;
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .job-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .job-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Job Description Page Starts */
+.job-desc-head {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(../images/bg/1567666.png);
+
+  background-size: cover;
+  padding: 80px 40px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+.job-desc-head-title {
+  font-size: 2rem;
+}
+.job-desc-head-meta {
+  font-size: 1.2rem;
+}
+.job-desc-content {
+  padding: 40px;
+}
+.job-desc-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.job-desc-content-left {
+  float: left;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 5px;
+}
+.job-desc-content-right {
+  float: left;
+  width: 30%;
+  padding: 0 20px;
+}
+@media (max-width: 800px) {
+  .job-desc-content-left,
+  .job-desc-content-right {
+    width: 100%;
+    height: auto;
+  }
+  .job-desc-content-right {
+    padding: 20px 0;
+  }
+}
+/* Job Description Page Ends */
+
+.apply-form::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.apply-form-left {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+.apply-form-right {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+@media (max-width: 800px) {
+  .apply-form-left,
+  .apply-form-right {
+    width: 100%;
+    height: auto;
+  }
+}
+.apply-form label {
+    font-family: 'Poppins', sans-serif;  font-size: 1rem;
+  
+}
+.apply-form input {
+  border: 1px solid #111;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+    margin: 5px 0;
+}
+.apply-form input:focus {
+  outline: none;
+}
+.apply-form input[type="file"] {
+  border: none;
+  padding: 0;
+}
+.apply-form input[type="file"]::file-selector-button {
+  border: none;
+  background: #021B79;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+.apply-form input[type='submit']{
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  max-width: 100px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.apply-form {
+  margin-bottom: 50px;
+  padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.w50p {
+  width: 50%;
+  margin: auto;
+}
+.center {
+  text-align: center;
+}
+.tabs button {
+  font-family: "Raleway", sans-serif;
+
+  color: #111;
+}
+.new-job-form {
+  padding: 20px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.new-job-form form label {
+  font-family: "Raleway", sans-serif;
+  display: block;
+}
+.new-job-form form input {
+  border: 1px solid #111;
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+}
+.new-job-form form textarea {
+  display: block;
+  border: 1px solid #111;
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.message-box{
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+text-align: center;
+margin-bottom: 30px;
+}
+.ap-card{
+  display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+
+/* Login */
+
+.login-box{
+  max-width: 400px;
+margin: auto;
+margin-top: 100px;
+padding: 20px 20px;
+border-radius: 5px;
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.login-box h1{
+  font-size: 1.5rem;
+  text-align: center;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 20px;
+}
+
+.login-box form label{
+        font-family: 'Poppins', sans-serif;
+}
+.login-box form input{
+  border: 1px solid #111;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+      color: #111;
+      margin: 10px 0;
+}
+.login-box form input:focus{
+  outline: none;
+}
+.login-box form input[type="submit"]{
+  border: none;
+  color: #fff;
+  background-color: #111;
+}
+.oldacbtn{
+  text-align: center;
+}
+#message{
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+.footer{
+  padding: 20px;
+  text-align: center;
+  justify-content: space-between;
+  display: flex;
+}
+.footer-menu ul{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.footer-menu ul li{
+  list-style: none;
+ 
+}
+
+.submit-btn-1{
+  background-color: #021B79;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: none;
+  display: inline-block;
+}
+
+/* BAckgrounds */
+
+.imgbg1{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+      url(https://images.pexels.com/photos/261679/pexels-photo-261679.jpeg);
+      background-size: cover;
+      color: #fff;
+}
+.imgbg2 {
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(../images/bg/bg1.jpg);
+  background-size: cover;
+  color: #fff; */
+  background: #0575E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+.star{
+  color: red;
+}
+.copyright{
+    font-family: 'Poppins', sans-serif;
+   
+    
+}
+.message-box{
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 0;
+      margin-top: 20px;
+      text-align: left;
+}
+.message-box p span{
+  text-decoration: underline;
+  font-weight: bold;
+  text-underline-offset: 8px;
+  
+}
+.bggr1{
+  background: #544a7d;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffd452, #544a7d);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffd452, #544a7d);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.page-title-job{
+  padding: 100px;
+font-family: 'Josefin Sans', sans-serif;
+text-align: center;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(../images/bg/bg2.jpg);
+    background-size: cover;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.page-title-job h1{
+font-size: 2rem;
+text-align: center;
+font-weight: bold;
+}
+.page-title-job form{
+  margin: 20px;
+}
+.page-title-job form input{
+  border-radius: 28px;
+  border: 1px solid #021B79;
+  padding: 10px;
+  min-width: 300px;
+}
+.page-title-job form input[type='submit']{
+  border: none;
+  background-color: #021B79;
+  color: #fff;
+  min-width: 100px;
+  margin-left: 10px;
+}
+.page-content h2{
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 30px;
+}
+.submit-btn{
+  display: block;
+}

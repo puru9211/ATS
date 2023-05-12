@@ -1,0 +1,57 @@
+.support-form form input, textarea{
+    border: 1px solid #111;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        color: #111;
+        margin: 10px 0;
+        
+}
+.support-form form input[type='submit']{
+    color: #fff;
+}
+.support-form form label{
+    display: block;
+}
+.support-form{
+    max-width: 600px;
+    margin: auto;
+padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.support-form::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.support-form-left {
+    float: left;
+    width: 50%;
+    padding: 100px 10px;
+    display: flex;
+        align-items: center;
+    font-size: 2rem;
+    
+}
+
+.support-form-right {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+    padding: 20px 20px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+@media (max-width: 800px) {
+
+    .support-form-left,
+    .support-form-right {
+        width: 100%;
+        height: auto;
+    }
+}
